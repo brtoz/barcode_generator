@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Generator</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!--Cdn Barcode-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js"></script>
+    <!--Font Awesome-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Barkod Oluşturucu</h1>
+        <input type="text" id="input" maxlength="32">
+        <button class="b1" id="btn-barcode-generator">Barkod Oluştur</button>
+        <svg id="barcode"></svg>
+        <button class="b2" id="btn-export-svg">
+            <i class="fa-solid fa-download"></i>
+        </button>
+        <button class="b3" id="btn-reset">
+            <i class="fa-solid fa-rotate-left"></i>        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
